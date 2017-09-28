@@ -17,7 +17,7 @@
             <asp:Label ID="lblDept" runat="server" style="z-index: 1; left: 114px; top: 302px; position: absolute" Text="Department"></asp:Label>
             <asp:Label ID="lblPhone" runat="server" style="z-index: 1; left: 142px; top: 347px; position: absolute" Text="Phone #"></asp:Label>
             <asp:Label ID="lblHrRate" runat="server" style="z-index: 1; left: 109px; top: 393px; position: absolute" Text="Hourly Rate"></asp:Label>
-            <asp:DropDownList ID="drpTechID" runat="server" style="z-index: 1; left: 240px; top: 89px; position: absolute">
+            <asp:DropDownList ID="drpTechID" runat="server" style="z-index: 1; left: 240px; top: 89px; position: absolute" AutoPostBack="True" OnSelectedIndexChanged="drpTechID_SelectedIndexChanged">
             </asp:DropDownList>
             <asp:TextBox ID="txtLname" runat="server" style="z-index: 1; left: 240px; top: 132px; position: absolute"></asp:TextBox>
             <asp:TextBox ID="txtFname" runat="server" style="z-index: 1; left: 240px; top: 172px; position: absolute"></asp:TextBox>

@@ -32,3 +32,37 @@ c:\users\htcstudent\documents\visual studio 2017\Projects\ASPdotNetProjectRyan\A
 c:\users\htcstudent\documents\visual studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csprojResolveAssemblyReference.cache
 c:\users\htcstudent\documents\visual studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.dll
 c:\users\htcstudent\documents\visual studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.pdb
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.pdb
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.exe
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.exe.config
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.rsp
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csi.exe
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csi.rsp
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.AppContext.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.exe
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.exe.config
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.rsp
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.dll.config
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.dll
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.pdb
+C:\Users\Ryan\Source\Repos\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
