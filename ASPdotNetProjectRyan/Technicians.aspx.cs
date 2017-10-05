@@ -81,6 +81,7 @@ namespace ASPdotNetProject
 
         private void ResetFields()
         {
+            lblError.Text = "";
             txtDept.Text = "";
             txtEmail.Text = "";
             txtFname.Text = "";
@@ -90,6 +91,39 @@ namespace ASPdotNetProject
             txtPhone.Text = "";
 
             txtLname.Focus();
+        }
+
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetFields();
+        }
+
+        private void InsertTechnician()
+        {
+            Int32 intRetValue;
+            string strFname = txtFname.Text.ToString();
+            string strMinit = txtMinit.Text.ToString();
+            string strLname = txtLname.Text.ToString();
+            string strEmail = txtEmail.Text.ToString();
+            string strDept = txtDept.Text.ToString();
+            decimal decHRate = Convert.ToDecimal(txtHrRate.Text);
+            intRetValue = clsDatabase.InsertTechnician(strFname, strMinit, strLname, strEmail, strDept, decHRate);
+            if(intRetValue == 0)
+            {
+                lblError.Text = "Technician added successfully";
+            }
+            else
+            {
+                lblError.Text = "Error adding Technician";
+            }
+        }
+
+        private Boolean ValidateFields()
+        {
+            Boolean blnValid = true;
+            string strMessage = "";
+            lblError.Text = "";
+            if (txtFname.Text.Trim().Length < )
         }
     }
 }

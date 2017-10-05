@@ -27,11 +27,12 @@
             <asp:TextBox ID="txtPhone" runat="server" style="z-index: 1; left: 240px; top: 344px; position: absolute"></asp:TextBox>
             <asp:TextBox ID="txtHrRate" runat="server" style="z-index: 1; left: 240px; top: 390px; position: absolute"></asp:TextBox>
             <asp:Button ID="btnAccept" runat="server" style="z-index: 1; left: 105px; top: 446px; position: absolute" Text="Accept" />
-            <asp:Button ID="btnCancel" runat="server" height="29px" style="z-index: 1; left: 212px; top: 446px; position: absolute" Text="Cancel" width="77px" />
+            <asp:Button ID="btnDelete" runat="server" height="29px" style="z-index: 1; left: 212px; top: 446px; position: absolute" Text="Delete" width="77px" />
             <asp:Button ID="btnAdd" runat="server" height="29px" style="z-index: 1; left: 316px; top: 446px; position: absolute" Text="Add New" width="77px" />
-            <asp:Button ID="btnReset" runat="server" height="29px" style="z-index: 1; left: 419px; top: 446px; position: absolute" Text="Reset" width="77px" />
+            <asp:Button ID="btnReset" runat="server" height="29px" style="z-index: 1; left: 419px; top: 446px; position: absolute" Text="Reset" width="77px" OnClick="btnReset_Click" />
             <asp:Button ID="btnMainMenu" runat="server" style="z-index: 1; left: 208px; top: 489px; position: absolute; width: 193px" Text="Return to Main Menu" OnClick="btnMainMenu_Click" />
         </div>
+        <asp:Label ID="lblError" runat="server" ForeColor="Red" style="z-index: 1; left: 23px; top: 52px; position: absolute"></asp:Label>
     </form>
 </body>
 </html>
