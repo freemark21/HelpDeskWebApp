@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using ASPdotNetProjectRyan;
+using System.Text.RegularExpressions;
 
 namespace ASPdotNetProject
 {
@@ -33,8 +34,9 @@ namespace ASPdotNetProject
             dsData = clsDatabase.GetTechnicianList();
             if (dsData != null)
             {
+                drpTechID.Items.Clear();
                 drpTechID.DataSource = dsData.Tables[0];
-                drpTechID.DataTextField = "TechnicianID";
+                drpTechID.DataTextField = "TechName";
                 drpTechID.DataValueField = "TechnicianID";
                 drpTechID.Items.Add(new ListItem("---Select Technician---", "0"));
                 //append new list item (above), making this the first item in the list
@@ -91,6 +93,7 @@ namespace ASPdotNetProject
             txtPhone.Text = "";
 
             txtLname.Focus();
+            LoadTechnicianList();
         }
 
         protected void btnReset_Click(object sender, EventArgs e)
@@ -106,11 +109,14 @@ namespace ASPdotNetProject
             string strLname = txtLname.Text.ToString();
             string strEmail = txtEmail.Text.ToString();
             string strDept = txtDept.Text.ToString();
+            string strPhone = Regex.Replace(txtPhone.Text, @"\s|\-|'|\(|\)|[A-Za-z]", "");
             decimal decHRate = Convert.ToDecimal(txtHrRate.Text);
-            intRetValue = clsDatabase.InsertTechnician(strFname, strMinit, strLname, strEmail, strDept, decHRate);
+
+            intRetValue = clsDatabase.InsertTechnician(strFname, strMinit, strLname, strEmail, strDept, decHRate, strPhone);
             if(intRetValue == 0)
             {
                 lblError.Text = "Technician added successfully";
+                LoadTechnicianList();
             }
             else
             {
@@ -123,7 +129,62 @@ namespace ASPdotNetProject
             Boolean blnValid = true;
             string strMessage = "";
             lblError.Text = "";
-            if (txtFname.Text.Trim().Length < )
+            if (txtFname.Text.Trim().Length < 1)
+            {
+                blnValid = false;
+                strMessage += "First name is a required field ";
+            }
+            if (txtLname.Text.Trim().Length < 1)
+            {
+                blnValid = false;
+                strMessage += "Last name is a required field ";
+            }
+            if (txtHrRate.Text.Trim().Length < 1)
+            {
+                blnValid = false;
+                strMessage += "Hourly rate is a required field ";
+            }
+            if (Regex.Replace(txtPhone.Text, @"\s|\-|'|\(|\)|[A-Za-z]", "").Trim().Length < 10)
+            {
+                blnValid = false;
+                strMessage += "Phone is a required field ";
+            }
+            lblError.Text = strMessage;
+            return blnValid;
+        }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteTechnician(string strTechID)
+        {
+            int intTechID = Convert.ToInt32(strTechID);
+            clsDatabase.DeleteTechnician(intTechID);
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            DeleteTechnician(drpTechID.SelectedValue);
+            ResetFields();
+        }
+
+        protected void btnAccept_Click(object sender, EventArgs e)
+        {
+
+            if (ValidateFields())
+            {
+                if(drpTechID.SelectedIndex == 0)
+                {
+                    InsertTechnician();
+                }
+                else
+                {
+
+                }
+            }
+            LoadTechnicianList();
         }
     }
 }

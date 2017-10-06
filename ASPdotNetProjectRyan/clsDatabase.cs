@@ -167,7 +167,7 @@ namespace ASPdotNetProjectRyan
         }
 
 
-        public static int InsertTechnician(string strFname, string strMinit, string strLname, string strEmail, string strDept, decimal decHRate)
+        public static int InsertTechnician(string strFname, string strMinit, string strLname, string strEmail, string strDept, decimal decHRate, string strPhone)
         {
             SqlConnection cnSQL;
             SqlCommand cmdSQL;
@@ -197,7 +197,14 @@ namespace ASPdotNetProjectRyan
 
                 cmdSQL.Parameters.Add(new SqlParameter("@Minit", SqlDbType.NChar));
                 cmdSQL.Parameters["@Minit"].Direction = ParameterDirection.Input;
-                cmdSQL.Parameters["@Minit"].Value = strMinit;
+                if (string.IsNullOrWhiteSpace(strMinit))
+                {
+                    cmdSQL.Parameters["@Minit"].Value = DBNull.Value;
+                }
+                else
+                {
+                    cmdSQL.Parameters["@Minit"].Value = strMinit;
+                }
 
                 cmdSQL.Parameters.Add(new SqlParameter("@LName", SqlDbType.NVarChar));
                 cmdSQL.Parameters["@LName"].Direction = ParameterDirection.Input;
@@ -205,15 +212,86 @@ namespace ASPdotNetProjectRyan
 
                 cmdSQL.Parameters.Add(new SqlParameter("@EMail", SqlDbType.NVarChar));
                 cmdSQL.Parameters["@EMail"].Direction = ParameterDirection.Input;
-                cmdSQL.Parameters["@EMail"].Value = strEmail;
+                if (string.IsNullOrWhiteSpace(strEmail))
+                {
+                    cmdSQL.Parameters["@EMail"].Value = DBNull.Value;
+                }
+                else
+                {
+                    cmdSQL.Parameters["@EMail"].Value = strEmail;
+                }
 
                 cmdSQL.Parameters.Add(new SqlParameter("@Dept", SqlDbType.NVarChar));
                 cmdSQL.Parameters["@Dept"].Direction = ParameterDirection.Input;
-                cmdSQL.Parameters["@Dept"].Value = strDept;
+                if (string.IsNullOrWhiteSpace(strDept))
+                {
+                    cmdSQL.Parameters["@Dept"].Value = DBNull.Value;
+                }
+                else
+                {
+                    cmdSQL.Parameters["@Dept"].Value = strDept;
+                }
 
                 cmdSQL.Parameters.Add(new SqlParameter("@HRate", SqlDbType.SmallMoney));
                 cmdSQL.Parameters["@HRate"].Direction = ParameterDirection.Input;
                 cmdSQL.Parameters["@HRate"].Value = decHRate;
+
+                cmdSQL.Parameters.Add(new SqlParameter("@Phone", SqlDbType.NVarChar));
+                cmdSQL.Parameters["@Phone"].Direction = ParameterDirection.Input;
+                cmdSQL.Parameters["@Phone"].Value = strPhone;
+
+
+                cmdSQL.Parameters.Add(new SqlParameter("@ErrCode", SqlDbType.Int));
+                cmdSQL.Parameters["@ErrCode"].Direction = ParameterDirection.ReturnValue;
+
+                try
+                {
+                    intRetCode = cmdSQL.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    blnErrorOccurred = true;
+                }
+                finally
+                {
+                    cmdSQL.Parameters.Clear();
+                    cmdSQL.Dispose();
+                    cnSQL.Close();
+                    cnSQL.Dispose();
+                }
+            }
+            if (blnErrorOccurred)
+            {
+                return -1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public static Int32 DeleteTechnician(int intTechID)
+        {
+            SqlConnection cnSQL;
+            SqlCommand cmdSQL;
+            Boolean blnErrorOccurred = false;
+            Int32 intRetCode = 0;
+
+            cnSQL = AcquireConnection();
+            if (cnSQL == null)
+            {
+                blnErrorOccurred = true;
+            }
+            else
+            {
+                cmdSQL = new SqlCommand();
+                cmdSQL.Connection = cnSQL;
+                cmdSQL.CommandType = CommandType.StoredProcedure;
+                cmdSQL.CommandText = "uspDeleteTechnician";
+
+                cmdSQL.Parameters.Add(new SqlParameter("@TechnicianID", SqlDbType.Int));
+                cmdSQL.Parameters["@TechnicianID"].Direction = ParameterDirection.Input;
+                cmdSQL.Parameters["@TechnicianID"].Value = intTechID;
 
                 cmdSQL.Parameters.Add(new SqlParameter("@ErrCode", SqlDbType.Int));
                 cmdSQL.Parameters["@ErrCode"].Direction = ParameterDirection.ReturnValue;
