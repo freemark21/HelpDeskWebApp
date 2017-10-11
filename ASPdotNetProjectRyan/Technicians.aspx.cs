@@ -79,6 +79,14 @@ namespace ASPdotNetProject
         protected void drpTechID_SelectedIndexChanged(object sender, EventArgs e)
         {
             ShowTehnician();
+            if (drpTechID.SelectedIndex == 0)
+            {
+                btnAdd.Text = "Add";
+            }
+            else
+            {
+                btnAdd.Text = "Accept";
+            }
         }
 
         private void ResetFields()
@@ -91,6 +99,7 @@ namespace ASPdotNetProject
             txtLname.Text = "";
             txtMinit.Text = "";
             txtPhone.Text = "";
+            btnAdd.Text = "Add";
 
             txtLname.Focus();
             LoadTechnicianList();
@@ -116,7 +125,6 @@ namespace ASPdotNetProject
             if(intRetValue == 0)
             {
                 lblError.Text = "Technician added successfully";
-                LoadTechnicianList();
             }
             else
             {
@@ -155,7 +163,18 @@ namespace ASPdotNetProject
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-
+            if (ValidateFields())
+            {
+                if (drpTechID.SelectedIndex == 0)
+                {
+                    InsertTechnician();
+                }
+                else
+                {
+                    UpdateTechnician(drpTechID.SelectedValue);
+                }
+            }
+            LoadTechnicianList();
         }
 
         private void DeleteTechnician(string strTechID)
@@ -170,21 +189,27 @@ namespace ASPdotNetProject
             ResetFields();
         }
 
-        protected void btnAccept_Click(object sender, EventArgs e)
+        private void UpdateTechnician(string strTechID)
         {
+            Int32 intRetValue;
+            string strFname = txtFname.Text.ToString();
+            string strMinit = txtMinit.Text.ToString();
+            string strLname = txtLname.Text.ToString();
+            string strEmail = txtEmail.Text.ToString();
+            string strDept = txtDept.Text.ToString();
+            string strPhone = Regex.Replace(txtPhone.Text, @"\s|\-|'|\(|\)|[A-Za-z]", "");
+            decimal decHRate = Convert.ToDecimal(txtHrRate.Text);
+            int intTechID = Convert.ToInt32(strTechID);
 
-            if (ValidateFields())
+            intRetValue = clsDatabase.UpdateTechnician(intTechID, strFname, strMinit, strLname, strEmail, strDept, decHRate, strPhone);
+            if (intRetValue == 0)
             {
-                if(drpTechID.SelectedIndex == 0)
-                {
-                    InsertTechnician();
-                }
-                else
-                {
-
-                }
+                lblError.Text = "Technician updated successfully";
             }
-            LoadTechnicianList();
+            else
+            {
+                lblError.Text = "Error updating Technician";
+            }
         }
     }
 }

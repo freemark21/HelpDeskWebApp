@@ -166,15 +166,6 @@ namespace ASPdotNetProject {
         protected global::System.Web.UI.WebControls.TextBox txtHrRate;
         
         /// <summary>
-        /// btnAccept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAccept;
-        
-        /// <summary>
         /// btnDelete control.
         /// </summary>
         /// <remarks>
