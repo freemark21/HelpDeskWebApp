@@ -163,6 +163,7 @@ namespace ASPdotNetProject
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
+            int intSelectedIndex = 0;
             if (ValidateFields())
             {
                 if (drpTechID.SelectedIndex == 0)
@@ -171,10 +172,12 @@ namespace ASPdotNetProject
                 }
                 else
                 {
+                    intSelectedIndex = drpTechID.SelectedIndex;
                     UpdateTechnician(drpTechID.SelectedValue);
                 }
             }
             LoadTechnicianList();
+            drpTechID.SelectedIndex = intSelectedIndex;
         }
 
         private void DeleteTechnician(string strTechID)
