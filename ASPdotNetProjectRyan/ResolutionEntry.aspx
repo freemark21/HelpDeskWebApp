@@ -35,7 +35,7 @@
             <asp:TextBox ID="txtMisc" runat="server" style="z-index: 1; left: 513px; top: 506px; position: absolute; width: 99px"></asp:TextBox>
             <asp:TextBox ID="txtCostMile" runat="server" style="z-index: 1; left: 759px; top: 457px; position: absolute" width="99px"></asp:TextBox>
             <asp:TextBox ID="txtDateOnsite" runat="server" style="z-index: 1; left: 513px; top: 558px; position: absolute" width="99px"></asp:TextBox>
-            <asp:CheckBox ID="chkNoCharge" runat="server" style="z-index: 1; left: 682px; top: 523px; position: absolute; width: 164px" Text="No Charge" />
+            <asp:CheckBox ID="chkNoCharge" runat="server" style="z-index: 1; left: 682px; top: 523px; position: absolute; width: 164px" Text="No Charge" OnCheckedChanged="chkNoCharge_CheckedChanged" />
             <asp:Button ID="btnSubmit" runat="server" style="z-index: 1; left: 257px; top: 622px; position: absolute" Text="Submit" OnClick="btnSubmit_Click" />
             <asp:Button ID="btnReset" runat="server" height="35px" style="z-index: 1; left: 630px; top: 622px; position: absolute" Text="Reset" width="90px" OnClick="btnReset_Click" />
             <asp:Button ID="btnReturnOpen" runat="server" style="z-index: 1; left: 323px; top: 682px; position: absolute" Text="Return to Open Problems" OnClick="btnReturnOpen_Click" />

@@ -46,5 +46,33 @@ namespace ASPdotNetProjectRyan
         {
             Response.Redirect("/Default.aspx");
         }
+
+        protected void gvOpenProb_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            Boolean blnErrorOccurred = false;
+            lblError.Text = "";
+            string strTicketID = "";
+            string strProbNum = "";
+            if(e.CommandName.Trim() == "Select")
+            {
+                try
+                {
+                    strTicketID = gvOpenProb.Rows[Convert.ToInt32(e.CommandArgument)].Cells[1].Text.ToString();
+                    strProbNum = gvOpenProb.Rows[Convert.ToInt32(e.CommandArgument)].Cells[2].Text.ToString();
+                }
+                catch(Exception ex)
+                {
+                    blnErrorOccurred = true;
+                    lblError.Text = "Unable to get ticket ID";
+                }
+            }
+
+            if (!blnErrorOccurred)
+            {
+                Session.Contents["TicketID"] = strTicketID;
+                Session.Contents["IncidentNo"] = strProbNum;
+                Response.Redirect("/ResolutionEntry.aspx");
+            }
+        }
     }
 }

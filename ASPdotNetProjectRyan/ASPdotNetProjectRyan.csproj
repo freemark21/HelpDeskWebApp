@@ -88,6 +88,7 @@
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="OpenProblems.aspx" />
     <Content Include="packages.config" />
     <Content Include="bin\ASPdotNetProjectRyan.dll.config" />
     <Content Include="bin\roslyn\csc.exe.config" />
@@ -108,6 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="ProblemEntry.aspx" />
+    <Content Include="ResolutionEntry.aspx" />
     <Content Include="ServiceEvents.aspx" />
     <Content Include="Technicians.aspx" />
     <Content Include="Web.config" />
@@ -124,7 +127,28 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="OpenProblems.aspx.cs">
+      <DependentUpon>OpenProblems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenProblems.aspx.designer.cs">
+      <DependentUpon>OpenProblems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemEntry.aspx.cs">
+      <DependentUpon>ProblemEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemEntry.aspx.designer.cs">
+      <DependentUpon>ProblemEntry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResolutionEntry.aspx.cs">
+      <DependentUpon>ResolutionEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResolutionEntry.aspx.designer.cs">
+      <DependentUpon>ResolutionEntry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ServiceEvents.aspx.cs">
       <DependentUpon>ServiceEvents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

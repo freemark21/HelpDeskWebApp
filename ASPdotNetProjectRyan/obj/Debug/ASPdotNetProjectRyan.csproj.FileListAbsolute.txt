@@ -99,3 +99,104 @@ C:\Users\HTCstudent\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\Microsoft.Code
 C:\Users\HTCstudent\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csprojResolveAssemblyReference.cache
 C:\Users\HTCstudent\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.dll
 C:\Users\HTCstudent\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.pdb
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.exe
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.exe.config
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.rsp
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csi.exe
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csi.rsp
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.AppContext.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.exe
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.exe.config
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.rsp
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\VBCSCompiler.exe
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.dll.config
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.pdb
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csprojResolveAssemblyReference.cache
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csproj.CoreCompileInputs.cache
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.dll
+C:\Users\DESKTOP\Documents\Visual Studio 2017\Projects\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.pdb
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csprojResolveAssemblyReference.cache
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.pdb
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.exe
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.exe.config
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.rsp
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csi.exe
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csi.rsp
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.AppContext.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Collections.Immutable.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.IO.FileSystem.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Reflection.Metadata.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.exe
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.exe.config
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.rsp
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\VBCSCompiler.exe
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\VBCSCompiler.exe.config
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.dll.config
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.dll
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.pdb
+G:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.exe
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.exe.config
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csc.rsp
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csi.exe
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\csi.rsp
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.AppContext.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Collections.Immutable.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.IO.FileSystem.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\System.Reflection.Metadata.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.exe
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.exe.config
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\vbc.rsp
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\VBCSCompiler.exe
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\roslyn\VBCSCompiler.exe.config
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.dll.config
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\ASPdotNetProjectRyan.pdb
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csprojResolveAssemblyReference.cache
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.csproj.CoreCompileInputs.cache
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.dll
+F:\ASPdotNetProjectRyan\ASPdotNetProjectRyan\obj\Debug\ASPdotNetProjectRyan.pdb

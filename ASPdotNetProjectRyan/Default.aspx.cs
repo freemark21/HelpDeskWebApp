@@ -23,5 +23,10 @@ namespace ASPdotNetProject
         {
             Response.Redirect("/Technicians.aspx");
         }
+
+        protected void btnProblemRes_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/OpenProblems.aspx");
+        }
     }
 }

@@ -22,6 +22,15 @@ namespace ASPdotNetProjectRyan {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// lblTech control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTech;
+        
+        /// <summary>
         /// lblTicketNum control.
         /// </summary>
         /// <remarks>
@@ -29,15 +38,6 @@ namespace ASPdotNetProjectRyan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTicketNum;
-        
-        /// <summary>
-        /// txtTicketNum control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTicketNum;
         
         /// <summary>
         /// lblProblemNum control.
@@ -49,15 +49,6 @@ namespace ASPdotNetProjectRyan {
         protected global::System.Web.UI.WebControls.Label lblProblemNum;
         
         /// <summary>
-        /// txtProblemNum control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProblemNum;
-        
-        /// <summary>
         /// lblProduct control.
         /// </summary>
         /// <remarks>
@@ -65,15 +56,6 @@ namespace ASPdotNetProjectRyan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblProduct;
-        
-        /// <summary>
-        /// drpProductList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpProductList;
         
         /// <summary>
         /// lblProblem control.
@@ -85,22 +67,13 @@ namespace ASPdotNetProjectRyan {
         protected global::System.Web.UI.WebControls.Label lblProblem;
         
         /// <summary>
-        /// txtProblem control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProblem;
-        
-        /// <summary>
-        /// lblTech control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTech;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// drpTech control.
@@ -112,12 +85,75 @@ namespace ASPdotNetProjectRyan {
         protected global::System.Web.UI.WebControls.DropDownList drpTech;
         
         /// <summary>
-        /// lblError control.
+        /// txtTicketNum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.TextBox txtTicketNum;
+        
+        /// <summary>
+        /// txtProblemNum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtProblemNum;
+        
+        /// <summary>
+        /// drpProductList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drpProductList;
+        
+        /// <summary>
+        /// txtProblem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtProblem;
+        
+        /// <summary>
+        /// lblTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTitle;
+        
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// btnReset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnReset;
+        
+        /// <summary>
+        /// btnReturnServ control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnReturnServ;
     }
 }

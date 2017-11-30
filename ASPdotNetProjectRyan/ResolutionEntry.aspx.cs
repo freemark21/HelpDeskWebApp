@@ -14,10 +14,18 @@ namespace ASPdotNetProjectRyan
     public partial class ResolutionEntry : System.Web.UI.Page
     {
         Int32 intResNum;
+        Int32 intNoCharge = 1;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                intResNum = 1;
+                if(Session.Contents["TicketID"] != null && Session.Contents["IncidentNo"] != null)
+                {
+                    txtTicketNum.Text = Session.Contents["TicketID"].ToString();
+                    txtProbNum.Text = Session.Contents["IncidentNo"].ToString();
+                    txtResNum.Text = intResNum.ToString();
+                }
                 LoadTechnicianList();
             }
         }
@@ -70,6 +78,8 @@ namespace ASPdotNetProjectRyan
         {
             Boolean blnValid = true;
             string strMessage = "";
+            DateTime dtDateFixed;
+            DateTime dtDateOnsite;
             lblError.Text = "";
             if (txtResolution.Text.Trim().Length < 1)
             {
@@ -86,6 +96,47 @@ namespace ASPdotNetProjectRyan
                 blnValid = false;
                 strMessage += "You must select a Technician; ";
             }
+            if (txtDateFixed.Text != "")
+            {
+                if (DateTime.TryParse(txtDateFixed.Text, out dtDateFixed))
+                {
+                    blnValid = false;
+                    strMessage += "Not a valid Fixed date; ";
+                }
+            }
+            if(txtDateOnsite.Text != "")
+            {
+                if (DateTime.TryParse(txtDateOnsite.Text, out dtDateOnsite))
+                {
+                    blnValid = false;
+                    strMessage += "Not a valid Onsite date; ";
+                }
+            }
+            if (!IsValidNumber(txtHours.Text))
+            {
+                blnValid = false;
+                strMessage += "Hours not a valid number";
+            }
+            if (!IsValidNumber(txtMileage.Text))
+            {
+                blnValid = false;
+                strMessage += "Mileage not a valid number";
+            }
+            if (!IsValidNumber(txtMisc.Text))
+            {
+                blnValid = false;
+                strMessage += "Misc not a valid number";
+            }
+            if (!IsValidNumber(txtSupplies.Text))
+            {
+                blnValid = false;
+                strMessage += "Supplies not a valid number";
+            }
+            if (!IsValidNumber(txtCostMile.Text))
+            {
+                blnValid = false;
+                strMessage += "Costmile not a valid number";
+            }
             lblError.Text = strMessage;
             return blnValid;
         }
@@ -94,8 +145,57 @@ namespace ASPdotNetProjectRyan
         {
             if (ValidateFields())
             {
-                intResNum++;
+                InsertResolution();
+                ResetFields();
+                txtResNum.Text = (Convert.ToInt32(txtResNum.Text) + 1).ToString();
             }
+        }
+
+        private void InsertResolution()
+        {
+            Int32 intRetValue;
+            Int32 intTicketID = Convert.ToInt32(txtTicketNum.Text);
+            Int32 intProbNum = Convert.ToInt32(txtProbNum.Text);
+            Int32 intResNum = Convert.ToInt32(txtResNum.Text);
+            string strResolution = Convert.ToString(txtResolution.Text);
+            Int32 intTechID = Convert.ToInt32(drpTech.SelectedValue);
+
+            intRetValue = clsDatabase.InsertProblemResolution(intTicketID, intProbNum, intResNum, strResolution, txtDateFixed.Text.ToString(), txtDateOnsite.Text.ToString(), intTechID, Convert.ToDecimal(txtHours.Text), txtMileage.Text.ToString(), txtCostMile.Text.ToString(), txtSupplies.Text.ToString(), txtMisc.Text.ToString(), intNoCharge);
+            if (intRetValue == 0)
+            {
+                lblError.Text = "Resolution added successfully";
+            }
+            else
+            {
+                lblError.Text = "Error adding Resolution";
+            }
+        }
+
+        public Boolean IsValidNumber(string strInput)
+        {
+            int intNumber;
+            if (strInput == "")
+            {
+
+                return true;
+            }
+            else
+            {
+                if (int.TryParse(strInput, out intNumber))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
+
+        protected void chkNoCharge_CheckedChanged(object sender, EventArgs e)
+        {
+            intNoCharge = 0;
         }
     }
 }
