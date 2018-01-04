@@ -13,8 +13,8 @@ namespace ASPdotNetProjectRyan
 {
     public partial class ProblemEntry : System.Web.UI.Page
     {
-        Int32 intProbNum = 1;
-        Int32 intNewTicket;
+        
+       
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -22,9 +22,9 @@ namespace ASPdotNetProjectRyan
             {
                 if (Session.Contents["NewTicketID"] != null)
                 {
-                    intNewTicket = Convert.ToInt32(Session.Contents["NewTicketID"]);
-                    txtTicketNum.Text = intNewTicket.ToString();
-
+                    txtTicketNum.Text = Convert.ToInt32(Session.Contents["NewTicketID"]).ToString();
+                    
+                    txtProblemNum.Text = "1";
                 }
                 LoadTechnicianList();
                 LoadProductList();
@@ -94,7 +94,7 @@ namespace ASPdotNetProjectRyan
             if (ValidateFields())
             {
                 InsertProblem();
-                txtProblemNum.Text = (Convert.ToInt32(txtProblemNum.Text) + 1).ToString();
+                
                 btnReturnServ.Enabled = true;
             }
         }
@@ -130,10 +130,11 @@ namespace ASPdotNetProjectRyan
             Int32 intTechID = Convert.ToInt32(drpTech.SelectedValue);
             string strProdID = Convert.ToString(drpProductList.SelectedValue);
 
-            intRetValue = clsDatabase.InsertProblem(intNewTicket, intProbNum, strProblem, intTechID, strProdID);
+            intRetValue = clsDatabase.InsertProblem(Convert.ToInt32(txtTicketNum.Text), Convert.ToInt32(txtProblemNum.Text), strProblem, intTechID, strProdID);
             if (intRetValue == 0)
             {
                 lblError.Text = "Problem added successfully";
+                txtProblemNum.Text = (Convert.ToInt32(txtProblemNum.Text) + 1).ToString();
             }
             else
             {

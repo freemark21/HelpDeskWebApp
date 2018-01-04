@@ -1,0 +1,15 @@
+﻿body {
+
+}
+
+.Banner {
+    margin: 20px;
+    background-color: blue;
+    width:95%;
+    height:75px;
+}
+
+.Banner span {
+    color: white;
+}
+

@@ -100,6 +100,8 @@
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="obj\Release\ASPdotNetProjectRyan.csproj.CoreCompileInputs.cache" />
+    <Content Include="ReportDisplay.aspx" />
+    <Content Include="Reports.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,8 +112,10 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="ProblemEntry.aspx" />
+    <Content Include="ReportsList.aspx" />
     <Content Include="ResolutionEntry.aspx" />
     <Content Include="ServiceEvents.aspx" />
+    <Content Include="Styles.css" />
     <Content Include="Technicians.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -142,6 +146,27 @@
       <DependentUpon>ProblemEntry.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportDisplay.aspx.cs">
+      <DependentUpon>ReportDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportDisplay.aspx.designer.cs">
+      <DependentUpon>ReportDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.Master.cs">
+      <DependentUpon>Reports.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.Master.designer.cs">
+      <DependentUpon>Reports.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsList.aspx.cs">
+      <DependentUpon>ReportsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportsList.aspx.designer.cs">
+      <DependentUpon>ReportsList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ResolutionEntry.aspx.cs">
       <DependentUpon>ResolutionEntry.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

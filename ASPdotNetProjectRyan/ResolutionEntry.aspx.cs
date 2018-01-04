@@ -100,6 +100,11 @@ namespace ASPdotNetProjectRyan
             {
                 if (DateTime.TryParse(txtDateFixed.Text, out dtDateFixed))
                 {
+                    blnValid = true;
+                    
+                }
+                else
+                {
                     blnValid = false;
                     strMessage += "Not a valid Fixed date; ";
                 }
@@ -108,8 +113,12 @@ namespace ASPdotNetProjectRyan
             {
                 if (DateTime.TryParse(txtDateOnsite.Text, out dtDateOnsite))
                 {
+                    blnValid = true;
+                }
+                else
+                {
                     blnValid = false;
-                    strMessage += "Not a valid Onsite date; ";
+                    strMessage += "Not a valid Fixed date; ";
                 }
             }
             if (!IsValidNumber(txtHours.Text))

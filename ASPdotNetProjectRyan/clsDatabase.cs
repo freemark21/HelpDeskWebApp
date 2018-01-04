@@ -963,5 +963,62 @@ namespace ASPdotNetProjectRyan
             }
         }
 
+        public static DataSet GetReport(string strReportCalled)
+        {
+            SqlConnection cnSQL;
+            SqlCommand cmdSQL;
+            SqlDataAdapter daSQL;
+            DataSet dsSQL = null;
+            Boolean blnErrorOccurred = false;
+            Int32 intRetCode;
+
+            cnSQL = AcquireConnection();
+            if (cnSQL == null)
+            {
+                return null;
+            }
+            else
+            {
+                cmdSQL = new SqlCommand()
+                {
+                    //below is simplified, was cmdSQL.Connection = cnSQL; etc.
+                    Connection = cnSQL,
+                    CommandType = CommandType.StoredProcedure,
+                    CommandText = strReportCalled
+                };
+                cmdSQL.Parameters.Add(new SqlParameter("@ErrCode", SqlDbType.Int));
+                cmdSQL.Parameters["@ErrCode"].Direction = ParameterDirection.ReturnValue;
+
+                dsSQL = new DataSet();
+
+                try
+                {
+                    daSQL = new SqlDataAdapter(cmdSQL);
+                    intRetCode = daSQL.Fill(dsSQL);
+                    daSQL.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    blnErrorOccurred = true;
+                    dsSQL.Dispose();
+                }
+                finally
+                {
+                    cmdSQL.Parameters.Clear();
+                    cmdSQL.Dispose();
+                    cnSQL.Close();
+                    cnSQL.Dispose();
+                }
+            }
+            if (blnErrorOccurred)
+            {
+                return null;
+            }
+            else
+            {
+                return dsSQL;
+            }
+        }
+
     }
 }

@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Reports.master.cs" Inherits="ASPdotNetProjectRyan.Reports" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="Banner" class="Banner">
+
+                <asp:Label ID="lblBanner" runat="server" style="z-index: 1; left: 261px; top: 64px; position: absolute; text-align: center;" Text="CCIS 2645 Introduction to ASP.Net" Font-Size="XX-Large"></asp:Label>
+
+
+                <asp:Label ID="lblDateTime" runat="server" style="z-index: 1; left: 100px; top: 20px; position: absolute"><%= DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss") %></asp:Label>
+
+
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
