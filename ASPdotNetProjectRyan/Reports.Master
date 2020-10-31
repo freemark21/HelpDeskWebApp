@@ -14,7 +14,7 @@
         <div>
             <div id="Banner" class="Banner">
 
-                <asp:Label ID="lblBanner" runat="server" style="z-index: 1; left: 261px; top: 64px; position: absolute; text-align: center;" Text="CCIS 2645 Introduction to ASP.Net" Font-Size="XX-Large"></asp:Label>
+                <asp:Label ID="lblBanner" runat="server" style="z-index: 1; left: 261px; top: 64px; position: absolute; text-align: center;" Text="Help Desk Web App" Font-Size="XX-Large"></asp:Label>
 
 
                 <asp:Label ID="lblDateTime" runat="server" style="z-index: 1; left: 100px; top: 20px; position: absolute"><%= DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss") %></asp:Label>
